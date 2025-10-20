@@ -8,7 +8,7 @@ body {
 }
 
 /* Altera o estilo do título (elemento HTML "h1") */
-h1 {
+h1.titulo {
     /* Usa a fonte importada do Google Fonts */
     font-family: "Bitcount Single Ink";
     /* Altera a cor da fonte */
@@ -63,11 +63,11 @@ input[type="text"]:focus {
 }
 
 /* Altera o estilo do botão de Concluir */
-.btn-success {
+.btn-concluir {
     background-color: blue;
 }
 
 /* Altera o estilo do botão de Excluir */
-.btn-danger {
-    background-color: white;
+.btn-excluir {
+    /* background-color: white; */
 }

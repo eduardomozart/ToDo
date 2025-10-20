@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
@@ -11,18 +11,18 @@
     <!-- "defer" executa o script só depois da página estar 100% carregada -->
     <script src="script.js" defer="defer"></script>
     <script src="https://cdn.jsdelivr.net/npm/tsparticles-confetti@2.12.0/tsparticles.confetti.bundle.min.js"></script>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
         <!-- Cria três linhas
-             Cada uma com 12 colunas, ou seja, 
-             Cada linha ocupa a tela inteira -->
+        Cada uma com 12 colunas, ou seja, 
+        Cada linha ocupa a tela inteira -->
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center pt-5">Minhas Tarefas</h1>
+                <h1 class="text-center pt-5 titulo">Minhas Tarefas</h1>
             </div>
         </div>
-
+        
         <div class="row">
             <div class="col-12 pt-3">
                 <!-- Cria um cartão -->
@@ -38,7 +38,7 @@
                 </div> <!-- .card -->
             </div>
         </div>
-
+        
         <div class="row pt-3">
             <div class="col-12">
                 <!-- Cria uma lista (ul) -->
@@ -48,5 +48,24 @@
             </div>
         </div>
     </div> <!-- .container -->
-  </body>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Excluir tarefa</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Você deseja excluir a tarefa selecionada?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-danger" onclick="excluirTarefa()">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

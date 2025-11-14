@@ -71,3 +71,9 @@ input[type="text"]:focus {
 .btn-excluir {
     /* background-color: white; */
 }
+
+/* Feedback visual das operações de arrastar e soltar (Drag & Drop) de tarefas */
+.dragging {
+    opacity: 0.5;
+    background: #e9ecef;
+}
